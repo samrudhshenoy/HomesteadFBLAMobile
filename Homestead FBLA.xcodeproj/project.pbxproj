@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C3E74F324510E0D00D32DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E74F224510E0D00D32DE4 /* AppDelegate.swift */; };
+		2C3E74F524510E0D00D32DE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E74F424510E0D00D32DE4 /* SceneDelegate.swift */; };
+		2C3E74F724510E0D00D32DE4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E74F624510E0D00D32DE4 /* MainViewController.swift */; };
+		2C3E74FA24510E0D00D32DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E74F824510E0D00D32DE4 /* Main.storyboard */; };
+		2C3E74FC24510E1000D32DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E74FB24510E1000D32DE4 /* Assets.xcassets */; };
+		2C3E74FF24510E1000D32DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E74FD24510E1000D32DE4 /* LaunchScreen.storyboard */; };
+		2C3E75092451113A00D32DE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E75082451113A00D32DE4 /* GoogleService-Info.plist */; };
+		2C3E750B2451611200D32DE4 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E750A2451611200D32DE4 /* ScanViewController.swift */; };
+		2C3E750E2451673B00D32DE4 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 2C3E750D2451673B00D32DE4 /* CodeScanner */; };
+		2C3E75102451F01700D32DE4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E750F2451F01700D32DE4 /* SignInViewController.swift */; };
+		34A8EB230CB185109EF6F100 /* Pods_Homestead_FBLA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBF0352C980E3F4423C1D63 /* Pods_Homestead_FBLA.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C3E74EF24510E0D00D32DE4 /* Homestead FBLA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homestead FBLA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3E74F224510E0D00D32DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C3E74F424510E0D00D32DE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C3E74F624510E0D00D32DE4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2C3E74F924510E0D00D32DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C3E74FB24510E1000D32DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C3E74FE24510E1000D32DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C3E750024510E1000D32DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C3E75082451113A00D32DE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C3E750A2451611200D32DE4 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		2C3E750F2451F01700D32DE4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3CBF0352C980E3F4423C1D63 /* Pods_Homestead_FBLA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homestead_FBLA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0AC96E68852A40397B789F /* Pods-Homestead FBLA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homestead FBLA.debug.xcconfig"; path = "Target Support Files/Pods-Homestead FBLA/Pods-Homestead FBLA.debug.xcconfig"; sourceTree = "<group>"; };
+		E9A2CD531827D1C3447ED0C4 /* Pods-Homestead FBLA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homestead FBLA.release.xcconfig"; path = "Target Support Files/Pods-Homestead FBLA/Pods-Homestead FBLA.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C3E74EC24510E0D00D32DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3E750E2451673B00D32DE4 /* CodeScanner in Frameworks */,
+				34A8EB230CB185109EF6F100 /* Pods_Homestead_FBLA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C3E74E624510E0D00D32DE4 = {
+			isa = PBXGroup;
+			children = (
+				2C3E74F124510E0D00D32DE4 /* Homestead FBLA */,
+				2C3E74F024510E0D00D32DE4 /* Products */,
+				B9F7574BBD74EE125458B98E /* Pods */,
+				56F8FEB9EFB3406F1DE608AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C3E74F024510E0D00D32DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C3E74EF24510E0D00D32DE4 /* Homestead FBLA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C3E74F124510E0D00D32DE4 /* Homestead FBLA */ = {
+			isa = PBXGroup;
+			children = (
+				2C3E75082451113A00D32DE4 /* GoogleService-Info.plist */,
+				2C3E74F224510E0D00D32DE4 /* AppDelegate.swift */,
+				2C3E74F424510E0D00D32DE4 /* SceneDelegate.swift */,
+				2C3E74F624510E0D00D32DE4 /* MainViewController.swift */,
+				2C3E750F2451F01700D32DE4 /* SignInViewController.swift */,
+				2C3E74F824510E0D00D32DE4 /* Main.storyboard */,
+				2C3E74FB24510E1000D32DE4 /* Assets.xcassets */,
+				2C3E74FD24510E1000D32DE4 /* LaunchScreen.storyboard */,
+				2C3E750024510E1000D32DE4 /* Info.plist */,
+				2C3E750A2451611200D32DE4 /* ScanViewController.swift */,
+			);
+			path = "Homestead FBLA";
+			sourceTree = "<group>";
+		};
+		56F8FEB9EFB3406F1DE608AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF0352C980E3F4423C1D63 /* Pods_Homestead_FBLA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9F7574BBD74EE125458B98E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC0AC96E68852A40397B789F /* Pods-Homestead FBLA.debug.xcconfig */,
+				E9A2CD531827D1C3447ED0C4 /* Pods-Homestead FBLA.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C3E74EE24510E0D00D32DE4 /* Homestead FBLA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C3E750324510E1000D32DE4 /* Build configuration list for PBXNativeTarget "Homestead FBLA" */;
+			buildPhases = (
+				8CE81A31AF47FB4A3176B843 /* [CP] Check Pods Manifest.lock */,
+				2C3E74EB24510E0D00D32DE4 /* Sources */,
+				2C3E74EC24510E0D00D32DE4 /* Frameworks */,
+				2C3E74ED24510E0D00D32DE4 /* Resources */,
+				3D0476A01550C69DB0493DAF /* [CP] Embed Pods Frameworks */,
+				D457D7972A2AAB47BEBB2520 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Homestead FBLA";
+			packageProductDependencies = (
+				2C3E750D2451673B00D32DE4 /* CodeScanner */,
+			);
+			productName = "Homestead FBLA";
+			productReference = 2C3E74EF24510E0D00D32DE4 /* Homestead FBLA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C3E74E724510E0D00D32DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Samrudh Shenoy";
+				TargetAttributes = {
+					2C3E74EE24510E0D00D32DE4 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2C3E74EA24510E0D00D32DE4 /* Build configuration list for PBXProject "Homestead FBLA" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C3E74E624510E0D00D32DE4;
+			packageReferences = (
+				2C3E750C2451673B00D32DE4 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
+			productRefGroup = 2C3E74F024510E0D00D32DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C3E74EE24510E0D00D32DE4 /* Homestead FBLA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C3E74ED24510E0D00D32DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3E74FF24510E1000D32DE4 /* LaunchScreen.storyboard in Resources */,
+				2C3E75092451113A00D32DE4 /* GoogleService-Info.plist in Resources */,
+				2C3E74FC24510E1000D32DE4 /* Assets.xcassets in Resources */,
+				2C3E74FA24510E0D00D32DE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D0476A01550C69DB0493DAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homestead FBLA/Pods-Homestead FBLA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homestead FBLA/Pods-Homestead FBLA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homestead FBLA/Pods-Homestead FBLA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CE81A31AF47FB4A3176B843 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homestead FBLA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D457D7972A2AAB47BEBB2520 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homestead FBLA/Pods-Homestead FBLA-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homestead FBLA/Pods-Homestead FBLA-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homestead FBLA/Pods-Homestead FBLA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C3E74EB24510E0D00D32DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3E74F724510E0D00D32DE4 /* MainViewController.swift in Sources */,
+				2C3E74F324510E0D00D32DE4 /* AppDelegate.swift in Sources */,
+				2C3E74F524510E0D00D32DE4 /* SceneDelegate.swift in Sources */,
+				2C3E75102451F01700D32DE4 /* SignInViewController.swift in Sources */,
+				2C3E750B2451611200D32DE4 /* ScanViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C3E74F824510E0D00D32DE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C3E74F924510E0D00D32DE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C3E74FD24510E1000D32DE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C3E74FE24510E1000D32DE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C3E750124510E1000D32DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C3E750224510E1000D32DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C3E750424510E1000D32DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0AC96E68852A40397B789F /* Pods-Homestead FBLA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Homestead FBLA/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.Homestead-FBLA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C3E750524510E1000D32DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9A2CD531827D1C3447ED0C4 /* Pods-Homestead FBLA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Homestead FBLA/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.Homestead-FBLA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C3E74EA24510E0D00D32DE4 /* Build configuration list for PBXProject "Homestead FBLA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C3E750124510E1000D32DE4 /* Debug */,
+				2C3E750224510E1000D32DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C3E750324510E1000D32DE4 /* Build configuration list for PBXNativeTarget "Homestead FBLA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C3E750424510E1000D32DE4 /* Debug */,
+				2C3E750524510E1000D32DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C3E750C2451673B00D32DE4 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C3E750D2451673B00D32DE4 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C3E750C2451673B00D32DE4 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2C3E74E724510E0D00D32DE4 /* Project object */;
+}
