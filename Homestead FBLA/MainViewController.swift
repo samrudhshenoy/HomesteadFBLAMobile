@@ -17,12 +17,15 @@ class MainViewController: UIViewController {
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet weak var verifyAcc: UIButton!
     @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var checkMark: UIImageView!
     var db: Firestore!
     var verified = false
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        checkMark.isHidden = true
         
         // [START setup]
         let settings = FirestoreSettings()
@@ -45,13 +48,23 @@ class MainViewController: UIViewController {
         verifyAcc.layer.shadowRadius = 2
         verifyAcc.layer.shadowOpacity = 0.8
         verifyAcc.layer.cornerRadius = 5
+//        verifyAcc.isHidden = true
+        
+        let user = Auth.auth().currentUser
+        if let user = user {
+//            verifyAcc.isHidden = true
+            signInButton.isHidden = true
+            username.text = user.email
+            checkMark.isHidden = false
+            verified = true
+        }
         
         // Do any additional setup after loading the view.
         
         
     }
     
-    @IBAction func verify (sender: UIButton) {
+    @IBAction func verify (sender: Any) {
         
         self.verifyAcc.setTitle("Verifying...", for: .normal)
         UIView.animate(withDuration: 0.4, animations: {
@@ -84,6 +97,9 @@ class MainViewController: UIViewController {
                     self.verifyAcc.setTitleColor(UIColor.black, for: .normal)
                     UIView.animate(withDuration: 0.4, animations: {
                         self.verifyAcc.backgroundColor = UIColor.green
+                    self.signInButton.isHidden = true
+                    self.checkMark.isHidden = false
+                        
                     })
                 }
             }
@@ -99,7 +115,7 @@ class MainViewController: UIViewController {
                 let firebaseAuth = Auth.auth()
                 try firebaseAuth.signOut()
                 
-                let errorAlert = UIAlertController(title: "Error", message: "This account is not linked with a valid ((Homestead)) FBLA account, either sign in with a different account or ask an officer for help.", preferredStyle: UIAlertController.Style.alert)
+                let errorAlert = UIAlertController(title: "Error", message: "This account is not linked with a valid Homestead FBLA account, either sign in with a different account or ask an officer for help.", preferredStyle: UIAlertController.Style.alert)
                 let done = UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: { action in })
                 errorAlert.addAction(done)
                 present(errorAlert, animated: true, completion: nil)

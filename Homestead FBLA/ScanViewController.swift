@@ -20,6 +20,7 @@ class ScanViewController: UIViewController, UINavigationControllerDelegate, UIIm
     @IBOutlet weak var inputPoints: UIButton!
     @State private var isShowingScanner = false
     
+    var db: Firestore!
     var imagePicker: UIImagePickerController!
 
 
@@ -31,6 +32,13 @@ class ScanViewController: UIViewController, UINavigationControllerDelegate, UIIm
       // VIEW DID LOAD
         override func viewDidLoad() {
             super.viewDidLoad()
+            
+            // [START setup]
+            let settings = FirestoreSettings()
+
+            Firestore.firestore().settings = settings
+            // [END setup]
+            db = Firestore.firestore()
             
             if (takePhoto != nil) {
                 takePhoto.layer.cornerRadius = 25
@@ -116,26 +124,31 @@ class ScanViewController: UIViewController, UINavigationControllerDelegate, UIIm
             else {
                 
                 print(pointsCode)
-            
-                var points = pointsCode[0..<2] // 0-1
-                var date = pointsCode[2..<4] //2-3
-                var month = pointsCode[4..<6] //4-5
-                var year = pointsCode[6..<8] //6-7
-                var name = pointsCode[8...] //8...
                 
-                if (points[0] == "0") {
-                    points = String(points[1])
+                var email = ""
+                let user = Auth.auth().currentUser
+                if let user = user {
+                    email = user.email!
                 }
                 
-                if (date[0] == "0") {
-                    date = String(date[1])
-                }
+                // Add new attendee to event list
+                let event = db.collection("activity points").document(pointsCode)
+                event.updateData([
+                    "Attendees": FieldValue.arrayUnion([email])
+                ])
                 
-                if (month[0] == "0") {
-                    month = String(month[1])
-                }
+//                var eventName = ""
+//                var numPoints = 0
+//                event.getDocument { (document, error) in
+//                    if let document = document, document.exists {
+//                        eventName = document.get("event") as! String
+//                        numPoints = document.get("points") as! Int
+//                    } else {
+//                        print("Document does not exist")
+//                    }
+//                }
                 
-                let errorAlert = UIAlertController(title: "Points Inputted!", message: "Event: \(name)\nDate: \(month)/\(date)/\(year)\nPoints: \(points)", preferredStyle: UIAlertController.Style.alert)
+                let errorAlert = UIAlertController(title: "Points Inputted!", message: "", preferredStyle: UIAlertController.Style.alert)
                 let done = UIAlertAction(title: "Great!", style: UIAlertAction.Style.default, handler: { action in })
                 errorAlert.addAction(done)
                 present(errorAlert, animated: true, completion: {})

@@ -59,11 +59,16 @@
                                     <action selector="verifyWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tts-fF-6UW"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="nNu-kz-ygP">
+                                <rect key="frame" x="315" y="234" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="checkMark" destination="nNu-kz-ygP" id="3Va-81-8xU"/>
                         <outlet property="scanCode" destination="SQx-WQ-fzp" id="k9a-Kf-0xf"/>
                         <outlet property="signInButton" destination="1w9-dB-R3X" id="XdH-D6-gAR"/>
                         <outlet property="username" destination="1dg-Y5-xJE" id="TWr-Ww-unv"/>
@@ -155,6 +160,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark" width="1200" height="1200"/>
         <image name="fblalogo" width="392" height="204"/>
         <image name="headerblue" width="879" height="354"/>
         <image name="hhsfblawhite" width="1999" height="897"/>
