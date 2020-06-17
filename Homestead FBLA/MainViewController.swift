@@ -13,29 +13,35 @@ import GoogleSignIn
 
 class MainViewController: UIViewController {
 
+    // All buttons/labels/images
     @IBOutlet weak var scanCode: UIButton!
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet weak var verifyAcc: UIButton!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var checkMark: UIImageView!
+    // Firebase database instance
     var db: Firestore!
+    // Whether signed in user is using a confirmed member account
     var verified = false
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Check mark signifies that account is verified
         checkMark.isHidden = true
         
-        // [START setup]
+        // [START db setup]
         let settings = FirestoreSettings()
 
         Firestore.firestore().settings = settings
-        // [END setup]
+        // [END db setup]
         db = Firestore.firestore()
         
+        // Initializes Google Sign-In view
         GIDSignIn.sharedInstance()?.presentingViewController = self
         
+        // All button cosmetics
         scanCode.layer.masksToBounds = false;
         scanCode.layer.shadowColor = UIColor.lightGray.cgColor
         scanCode.layer.shadowOffset = CGSize(width: 1, height: 2)
@@ -50,6 +56,8 @@ class MainViewController: UIViewController {
         verifyAcc.layer.cornerRadius = 5
 //        verifyAcc.isHidden = true
         
+        
+        // Determines whether user is signed in
         let user = Auth.auth().currentUser
         if let user = user {
 //            verifyAcc.isHidden = true
@@ -64,15 +72,17 @@ class MainViewController: UIViewController {
         
     }
     
+    // Verifies whether account currently signed in matches with a member account in Firebase
     @IBAction func verify (sender: Any) {
         
+        // Changes button cosmetic
         self.verifyAcc.setTitle("Verifying...", for: .normal)
         UIView.animate(withDuration: 0.4, animations: {
             self.verifyAcc.backgroundColor = UIColor.lightGray
         })
         
         var email = ""
-        
+        // Retrieves current user's info
         let user = Auth.auth().currentUser
         if let user = user {
             let uid = user.uid
@@ -84,7 +94,7 @@ class MainViewController: UIViewController {
         else {
             print("error with sign in")
         }
-        
+        // Parses firebase users and checks whether current user email matches with a registered member's email
         db.collection("users").whereField("email", isEqualTo: email).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
@@ -107,9 +117,11 @@ class MainViewController: UIViewController {
 
     }
     
+    // Opens scanner view
     @IBAction func openScanner (sender: UIButton) {
         print("verified? \(verified)")
         
+        // If user is not verified, signs them out and prompts them with a message
         if verified == false {
             do {
                 let firebaseAuth = Auth.auth()
@@ -124,6 +136,7 @@ class MainViewController: UIViewController {
             }
         }
         
+        // If user is verified, opens scanner view
         else {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "scannerview") as! ScanViewController
             self.present(vc, animated: true, completion: nil)

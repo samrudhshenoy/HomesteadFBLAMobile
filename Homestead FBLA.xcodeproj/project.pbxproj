@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C3E74F324510E0D00D32DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E74F224510E0D00D32DE4 /* AppDelegate.swift */; };
-		2C3E74F524510E0D00D32DE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E74F424510E0D00D32DE4 /* SceneDelegate.swift */; };
 		2C3E74F724510E0D00D32DE4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E74F624510E0D00D32DE4 /* MainViewController.swift */; };
 		2C3E74FA24510E0D00D32DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E74F824510E0D00D32DE4 /* Main.storyboard */; };
 		2C3E74FC24510E1000D32DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E74FB24510E1000D32DE4 /* Assets.xcassets */; };
@@ -16,14 +15,13 @@
 		2C3E75092451113A00D32DE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E75082451113A00D32DE4 /* GoogleService-Info.plist */; };
 		2C3E750B2451611200D32DE4 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E750A2451611200D32DE4 /* ScanViewController.swift */; };
 		2C3E750E2451673B00D32DE4 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 2C3E750D2451673B00D32DE4 /* CodeScanner */; };
-		2C3E75102451F01700D32DE4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E750F2451F01700D32DE4 /* SignInViewController.swift */; };
+		2C75F153249AD0E8009ECA52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75F152249AD0E8009ECA52 /* SceneDelegate.swift */; };
 		34A8EB230CB185109EF6F100 /* Pods_Homestead_FBLA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBF0352C980E3F4423C1D63 /* Pods_Homestead_FBLA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C3E74EF24510E0D00D32DE4 /* Homestead FBLA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homestead FBLA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3E74F224510E0D00D32DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C3E74F424510E0D00D32DE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C3E74F624510E0D00D32DE4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2C3E74F924510E0D00D32DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C3E74FB24510E1000D32DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,7 +29,7 @@
 		2C3E750024510E1000D32DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C3E75082451113A00D32DE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C3E750A2451611200D32DE4 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
-		2C3E750F2451F01700D32DE4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		2C75F152249AD0E8009ECA52 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../Desktop/SceneDelegate.swift; sourceTree = "<group>"; };
 		3CBF0352C980E3F4423C1D63 /* Pods_Homestead_FBLA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homestead_FBLA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0AC96E68852A40397B789F /* Pods-Homestead FBLA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homestead FBLA.debug.xcconfig"; path = "Target Support Files/Pods-Homestead FBLA/Pods-Homestead FBLA.debug.xcconfig"; sourceTree = "<group>"; };
 		E9A2CD531827D1C3447ED0C4 /* Pods-Homestead FBLA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homestead FBLA.release.xcconfig"; path = "Target Support Files/Pods-Homestead FBLA/Pods-Homestead FBLA.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,11 +69,10 @@
 		2C3E74F124510E0D00D32DE4 /* Homestead FBLA */ = {
 			isa = PBXGroup;
 			children = (
+				2C75F152249AD0E8009ECA52 /* SceneDelegate.swift */,
 				2C3E75082451113A00D32DE4 /* GoogleService-Info.plist */,
 				2C3E74F224510E0D00D32DE4 /* AppDelegate.swift */,
-				2C3E74F424510E0D00D32DE4 /* SceneDelegate.swift */,
 				2C3E74F624510E0D00D32DE4 /* MainViewController.swift */,
-				2C3E750F2451F01700D32DE4 /* SignInViewController.swift */,
 				2C3E74F824510E0D00D32DE4 /* Main.storyboard */,
 				2C3E74FB24510E1000D32DE4 /* Assets.xcassets */,
 				2C3E74FD24510E1000D32DE4 /* LaunchScreen.storyboard */,
@@ -242,10 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C75F153249AD0E8009ECA52 /* SceneDelegate.swift in Sources */,
 				2C3E74F724510E0D00D32DE4 /* MainViewController.swift in Sources */,
 				2C3E74F324510E0D00D32DE4 /* AppDelegate.swift in Sources */,
-				2C3E74F524510E0D00D32DE4 /* SceneDelegate.swift in Sources */,
-				2C3E75102451F01700D32DE4 /* SignInViewController.swift in Sources */,
 				2C3E750B2451611200D32DE4 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
